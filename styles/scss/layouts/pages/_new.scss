@@ -1,0 +1,40 @@
+#new{
+    .prev_next{
+        .prev,
+        .next{
+            color:$gray94;
+            max-width: 500px;
+            &:hover{
+                .title,
+                i{
+                    color:black;
+                }
+                .sub{
+                    color:$gray63;
+                }
+            }
+            i,span{
+                transition: all .3s;
+            }
+        }
+        @media(max-width:1199px){
+            .prev,
+            .next{
+                max-width: 380px;
+            }
+        }
+        @media(max-width:991px){
+            .prev,
+            .next{
+                max-width: 280px;
+            }
+            
+        } 
+    }
+    @media(max-width:767px){
+        .bg-white{
+            border-bottom:1px solid black;
+            background-color: transparent !important;
+        }
+    }
+}

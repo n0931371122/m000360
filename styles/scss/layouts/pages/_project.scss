@@ -1,0 +1,208 @@
+
+#project{
+    .swiper-container.main{
+        .swiper-button{
+            width: 60px;
+            height: 60px;
+            transition: all .3s;
+            transform: translateY(-50%);
+            &:hover{
+                background: $yellow !important;
+            }
+            i{
+                font-size: 26px;
+            }
+        }
+    }
+    .swiper-container.nav{
+        .swiper-slide{
+            transition: all .3s;
+            border:2px solid white;
+            &.active{
+                border:2px solid $yellow; 
+            }
+        }
+    }
+    .details{
+        .detail{
+            span{
+                &:nth-child(1){
+                    position: relative;
+                    padding-right: 30px;
+                    margin-right: 24px;
+                    &::after{
+                        content:"";
+                        display: block;
+                        position: absolute;
+                        top: 8px;
+                        right: 0;
+                        width: 1px;
+                        height: 9px;
+                        background: #C2C2C2;
+                    }
+                }
+            }
+        }
+    }
+    .share{
+        button{
+            width: 48px;
+            height: 48px; 
+        }
+        .dropdown{
+            display: none;
+            width: 48px;
+            background: black;
+            a{
+                position: relative;
+                &:not(:last-child){                
+                    &::after{
+                        content:"";
+                        display: block;
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 12px;
+                        height: 1px;
+                        background: #535457;
+                    }
+                }
+            }
+        }
+        i{
+            &.icon-share{
+                font-size: 22px;
+            }
+            &.icon-fb{
+                font-size: 20px;
+            } 
+            &.icon-line{
+                font-size: 20px;
+            } 
+            &.icon-mail{
+                font-size: 12px;
+            } 
+        }
+    }
+    .swiper-pagination{
+        .swiper-pagination-bullet{
+            width: 30px;
+            height: 30px;
+            position: relative;
+            background: transparent;
+            opacity: 1;
+            border:1px solid transparent;
+            transition: all .3s;
+            &::after{
+                content:"";
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                width: 9px;
+                height: 9px;
+                border-radius: 50%;
+                background: $grayB7;
+                transition: all .3s;
+            }
+            &.swiper-pagination-bullet-active{
+                border:1px solid black;
+                &::after{
+                    background: black;
+                }
+            }
+        }
+    }
+    .back,
+    .prev,
+    .next{
+        width: 60px;
+        height: 60px;       
+        margin-bottom: 1px;
+        &:hover{
+            span{
+                opacity: 1;
+                transform: translate(0px,-50%);
+            }
+        }
+        i{
+            font-size: 28px;
+        }
+        span{
+            opacity: 0;
+            transition: all .3s;
+            top: 50%;
+            left: calc(100% + 20px);
+            transform: translate(5px,-50%);
+            width: 65px;
+        }
+    }
+    .back i{
+        font-size: 18px;
+    }
+    @media(max-width:1799px){
+        .back,
+        .prev,
+        .next{
+            span{
+                right: calc(100%);
+                left: auto;
+            }
+        }
+    }
+    @media(max-width:767px){
+        padding-top: 80px;
+        .back,
+        .prev,
+        .next{
+            width: 40px;
+            height: 40px;       
+            margin-bottom: 0px;
+            margin-right: 5px;
+            i{
+                font-size: 20px;
+                &.icon-block{
+                    font-size: 16px;
+                }
+            }
+        }
+        .bg-white{
+            background-color: transparent !important;
+        }
+        .details .detail span:nth-child(1){
+            padding-right: 15px;
+            margin-right: 12px;
+        }
+        .swiper-pagination{
+            .swiper-pagination-bullet{
+                width: 20px;
+                height: 20px;
+                &::after{
+                    width: 6px;
+                    height: 6px;
+                }
+            }
+        }
+        .share{
+            button{
+                width: 40px;
+                height: 40px;
+            }
+            .dropdown{
+                display: flex;
+                width: auto;
+                background: transparent;
+                a{
+                    width: 40px;
+                    height: 40px;
+                    background: black;
+                    &::after{
+                        display: none !important;
+                    }
+                }
+            }
+        }  
+    }
+}

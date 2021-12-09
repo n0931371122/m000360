@@ -1,0 +1,58 @@
+#team{
+    .item{
+        &::before{
+            content:"";
+            display: block;
+            position: absolute;
+            width: 12px;
+            height: 4px;
+            background: $yellow;
+            top: 20px;
+            left: 0;
+        }
+        
+        &:hover{
+            
+            .img-inner .person{
+                filter:grayscale(0);
+            }
+            .text-inner{
+                opacity: 1;
+                transform: none;
+            }
+        }
+        .img-inner{
+            height: 292px;
+            .person{
+                right: 20px;
+                bottom: 0;
+                filter:grayscale(1);
+                transition: filter .3s;
+            }
+        }
+        .text-inner{
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all .3s;
+            &::before{
+                content:"";
+                display: block;
+                position: absolute;
+                width: 1px;
+                height: 100px;
+                background: #E9E9E9;
+                left: 0;
+                top: -40px;
+            }
+        }
+    }
+    @media(max-width:1399px){
+        .item .text-inner{
+            opacity: 1;
+            transform: none;
+        }
+        .item .img-inner .person{
+            filter: grayscale(0);
+        }
+    }
+}

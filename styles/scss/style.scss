@@ -1,0 +1,37 @@
+@charset 'utf-8';
+@import 'plugins/bootstrap/bootstrap.scss'; 
+@import 'plugins/swiper/swiper.scss';
+@import 'font/css/fontello.css'; 
+@import 'scss/plugins/mCustomScrollbar.css'; 
+@import 'scss/plugins/bootstrap-select.min.css'; 
+// config
+@import 'config/_config.scss';
+@import 'config/_fontSize.scss'; 
+// // layouts 
+@import 'layouts/_reset.scss'; 
+
+@import 'layouts/_common.scss'; 
+@import 'layouts/_layouts.scss';
+@import 'layouts/_keyframes.scss';   
+
+
+// pages
+
+@import 'layouts/pages/_index.scss';
+@import 'layouts/pages/_projects.scss';   
+@import 'layouts/pages/_project.scss'; 
+@import 'layouts/pages/_news.scss';     
+@import 'layouts/pages/_new.scss';   
+@import 'layouts/pages/_introduction.scss';
+@import 'layouts/pages/_materials.scss';
+@import 'layouts/pages/_material.scss';     
+@import 'layouts/pages/_about.scss';
+@import 'layouts/pages/_service.scss';
+@import 'layouts/pages/_team.scss';
+@import 'layouts/pages/_location.scss';
+@import 'layouts/pages/_contact.scss';
+@import 'layouts/pages/_contact-send.scss';
+@import 'layouts/pages/_cooperate.scss';
+@import 'layouts/pages/_blogs.scss';
+@import 'layouts/pages/_blog.scss';
+@import 'layouts/pages/_404.scss';

@@ -1,0 +1,132 @@
+
+
+
+//65 62 48 42 40 38 36 32 30 28 26 24 22 20 18 17 15 14 12
+.fz-65{
+  @include fz(65px); 
+} 
+.fz-60{
+  @include fz(60px); 
+} 
+.fz-62{
+  @include fz(62px); 
+} 
+.fz-48{
+  @include fz(48px);
+}
+.fz-42{
+  @include fz(42px);
+}
+.fz-40{
+  @include fz(40px);
+}
+.fz-38{
+  @include fz(38px); 
+}
+.fz-36{
+  @include fz(36px);
+}
+.fz-32{
+  @include fz(32px);
+}
+.fz-30{
+  @include fz(30px);
+}
+.fz-28{
+  @include fz(28px);
+}
+.fz-26{
+  @include fz(26px);
+}
+.fz-24{
+  @include fz(24px);
+}
+.fz-22{
+  @include fz(22px);
+}
+.fz-20{
+  @include fz(20px);
+}
+.fz-18{
+  @include fz(18px);
+}
+.fz-17{
+  @include fz(17px);
+}
+.fz-15{
+  @include fz(15px);
+}
+.fz-14{
+  @include fz(14px);
+}
+.fz-12{
+  @include fz(12px);
+}
+
+@media (max-width: 1199px){
+  .fz-62{
+    font-size: 50px;
+  }
+  .fz-48{
+    font-size: 42px;
+  }
+  .fz-40{
+    font-size: 36px;
+  }
+}
+@media (max-width: 991px){
+  .fz-62{
+    font-size: 46px;
+  }
+
+}
+@media (max-width: 767px){
+  .fz-65{
+    font-size: 30px;
+  }
+  .fz-62{
+    font-size: 46px;
+  }
+  .fz-48{
+    font-size: 30px;
+  }
+  .fz-42{
+    font-size: 30px;
+  }
+  .fz-40{
+    font-size: 30px;
+  }
+  .fz-38{
+    font-size: 26px;
+  }
+  .fz-32{
+    font-size: 22px;
+  }
+  .fz-30{
+    font-size: 21px;
+  }
+  .fz-26{
+    font-size: 20px;
+  }
+  .fz-28{
+    font-size: 19px;
+  }
+  .fz-24{
+    font-size: 19px;
+  }
+  .fz-22{
+    font-size: 20px;
+  }
+  .fz-20{
+    font-size: 18px;
+  }
+  .fz-18{
+    font-size: 16px;
+  }  
+  .fz-15{
+    font-size: 14px;
+  }
+  .fz-14{
+    font-size: 12px;
+  }
+}

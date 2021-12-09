@@ -1,0 +1,33 @@
+.contact-send-page main{
+    @media(max-width:767px){
+        min-height: auto;
+    }
+}
+#contact-send{
+    min-height: 100vh;
+    h1{
+        padding-bottom: 32px;
+        margin-bottom: 32px;
+        &::after{
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 63px;
+            height: 1px;
+            background: #DDDDDD;
+        }
+    }
+    @media(max-width:767px){
+        min-height: auto;
+        h1{
+            padding-bottom: 24px;   
+            margin-bottom: 24px;
+        }
+        .img{
+            width: 80px;
+        }
+    }
+}

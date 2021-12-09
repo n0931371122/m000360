@@ -1,0 +1,120 @@
+#materials{
+    .bg{
+        &::before{
+            content:"";
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 795px;
+            background: url(images/common/gray-bg.jpg);
+            background-size: cover;
+            left: 0;
+            top: 460px;
+            z-index: -1;
+        }
+        &::after{
+            content:"";
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 410px;
+            background: url(images/common/gray-bg.jpg);
+            background-size: cover;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+    }
+    .item{
+        &:nth-child(even){
+            .img-inner{
+                span{
+                    left: auto;
+                    right: -35px;
+                }
+            }
+            .text-inner{
+                h2{
+                    &::before{
+                        left: auto;
+                        right: -125px;
+                    }
+                }
+            }
+
+        }
+        &.aos-animate{
+            .img-inner{
+                .img{
+                    img{
+                        transform: scale(1.05);
+                    }
+                }
+            }
+        }
+        .img-inner{
+            .img{
+                img{
+                    transition: all 1s;
+                    transition-delay: .5s;
+                }
+            }
+            span{
+                top: 0;
+                left: -35px;
+                transform: rotate(180deg);
+                writing-mode: vertical-lr ;
+            }
+        }
+        .text-inner{  
+            .more{
+                i{
+                    font-size: 28px;
+                }
+            }
+            h2{
+                &::before{
+                    content:"";
+                    display: block;
+                    position: absolute;
+                    top: 35px;
+                    left: -165px;
+                    height: 2px;
+                    width: 130px;
+                    background: $yellow;
+                }
+            }
+        }
+    }
+    @media(max-width:1199px){
+        .bg{
+            &::before{       
+                top: 422px;
+                height: 422px;
+            }
+            &::after{
+                display: none;
+            }
+        }
+    }
+    @media(max-width:991px){
+        .bg{
+            &::before{       
+                display: none;
+            }
+        }
+        .item{
+            .img-inner span{
+                transform: none;
+                writing-mode: initial;
+            }
+            .text-inner h2::before{
+                left: 0;
+                right: auto !important;
+                top: auto;
+                bottom: 0;
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+#page404{
+    height: 100vh;
+    .text-section{
+        left: 50%;
+        top: 32%;
+        transform: translate(-50%,-50%);
+        .text-block{
+            max-width: 500px;
+            margin-top: -10px;
+        }
+    }
+    @media(max-width:1199px){
+        .text-section{
+            top: 38%;
+        }
+    }
+    @media(max-width:767px){
+        height: 700px;
+    }
+   @media(max-width:575px){
+        height: 100vh;
+    }
+}

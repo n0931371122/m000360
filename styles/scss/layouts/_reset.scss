@@ -1,0 +1,103 @@
+body{
+	font-family: "Rufina","Noto Sans TC"; 
+	font-size: 16px;
+	padding: 0 !important;
+	letter-spacing: 1px;
+}
+main{
+	min-height: 100vh;
+}
+img{
+	max-width: 100%; 
+}
+a{
+	color:inherit;
+	transition: color .3s;
+	&:hover{
+		color:inherit;
+	}
+}
+input,button{
+	outline: 0;
+	padding: 0;
+}
+input{
+	padding: 0;
+	border: 0;
+	background: transparent; 
+	-webkit-appearance: none;
+}
+textarea{
+	border:0;
+	outline:0;
+	-webkit-appearance: none;
+}
+button{
+	border:0;
+	background: transparent;
+	letter-spacing: inherit;
+	color:inherit;
+}
+ul{
+	padding: 0;
+	margin: 0;
+}
+.ns{
+	list-style: none;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: #B2B2B2;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #B2B2B2;
+}
+
+::-o-placeholder { /* Mozilla Firefox 19+ */
+  color: #B2B2B2;
+}
+
+::-ms-placeholder { /* Internet Explorer 10+ */
+  color: #B2B2B2;
+}
+
+::-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: #B2B2B2;
+}
+[class^="icon-"]:before, [class*=" icon-"]:before{
+	width: auto;
+}
+@media (prefers-reduced-motion: no-preference){
+	:root {
+		scroll-behavior: initial;
+	}
+}
+.swiper-pagination .swiper-pagination-bullet{
+	outline: none !important;
+}
+.swiper-button{
+	margin-top: 0;
+	outline: none !important;
+	transition: all .3s;
+    &::after{
+        display: none;
+    }
+	&.swiper-button-prev{
+		left: 0;
+	}
+	&.swiper-button-next{
+		right: 0;
+	}
+	&.swiper-button-disabled{
+		opacity: 0;
+	}
+}
+[data-aos=flip-right] {
+    transform: perspective(2500px) rotateY(30deg);
+}
+.bootstrap-select .dropdown-toggle{
+	&:focus{
+		outline: none !important;
+		box-shadow:none !important;
+	}
+}

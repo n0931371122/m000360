@@ -1,0 +1,21 @@
+#contact{
+    .selects{
+        flex:0 0 calc((100% - 128px) /2);
+    }
+    .verificationCode-img{
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+    }
+    @media(max-width:991px){
+        .selects{
+            flex:0 0 100%;
+        }
+    }
+    @media(max-width:767px){
+        .verificationCode-img{
+            width: 50px;
+            right: 10px;
+        }
+    }
+}
